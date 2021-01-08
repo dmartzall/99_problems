@@ -1,0 +1,111 @@
+<h1 id="top" style="text-align: center;"><img src="/sys_attachment.do?sys_id=64d63b09db856c90a5e4b9f2e296192b" /> <span style="font-size: 18pt;">FAQ</span></h1>
+<h3 style="text-align: center;"><span style="text-decoration: underline; background-color: #ffff99; font-size: 10pt;"><span style="background-color: #ffff99;"><strong>***This document will be updated as more questions come in related to Splunk. You can also do a search on this document for keywords using the key combination of CTRL+F.***</strong></span></span></h3>
+<h1 style="text-align: left;">Table of Contents</h1>
+<ul style="list-style-position: inside;">
+<li style="font-size: 14pt;"><a href="#termsanddef" rel="nofollow"><strong>Terms and Definitions</strong></a></li>
+<li style="font-size: 14pt;"><a href="#account" rel="nofollow"><strong>Account Issues</strong></a></li>
+<li style="font-size: 14pt;"><a href="#general" rel="nofollow"><strong>General Issues</strong></a></li>
+<li style="font-size: 14pt;"><a href="#search" rel="nofollow"><strong>Search Issues</strong></a></li>
+<li style="font-size: 14pt;"><a href="#display" rel="nofollow"><strong>Display Issues</strong></a></li>
+<li style="font-size: 14pt;"><a href="#log" rel="nofollow"><strong>Log Issues</strong></a></li>
+<li style="font-size: 14pt;"><a href="#add_resources" rel="nofollow"><strong>Additional Resources</strong></a></li>
+</ul>
+<hr />
+<h2 id="termsanddef">Terms and Definitions</h2>
+<p>Splunk - A platform for collecting, searching, monitoring, reporting and analyzing all of your real-time and historical machine data via a cloud service centrally and uniformly delivered</p>
+<p>Report - A saved search that can be saved and/or be used to create alerts</p>
+<p>Event - Anything that happens in the system</p>
+<p>Alert - A defined event generated and sent to the ServiceNow platform containing technical information about a warning or critical event</p>
+<p>Notification - A message sent to a person or team about an actionable alert</p>
+<p>Index - The repository for data. When the Splunk platform indexes raw data, it transforms the data into searchable&nbsp;events.</p>
+<p>Data Model - A&nbsp;type of knowledge object that applies an information structure to raw data, making it easier to use. Each data model represents a category of event data.</p>
+<p>Source - A&nbsp;default field that identifies&nbsp;where the event originated. In the case of data monitored from files and directories, the source consists of the full pathname of the file or directory. In the case of a network-based source, the source field consists of the protocol and port, such as UDP:514.</p>
+<p>Source Type -A&nbsp;default field&nbsp;that identifies the data structure of an&nbsp;event. A source type determines how Splunk Enterprise formats the data during the indexing process. &nbsp;Example source types include&nbsp;<code>access_combined</code>&nbsp;and&nbsp;<code>cisco_syslog</code>.</p>
+<p>Tag - A&nbsp;knowledge object&nbsp;that enables you to search for events that contain particular field values. You can assign one or more tags to any field/value combination, including&nbsp;event types,&nbsp;hosts,&nbsp;sources, and&nbsp;source types.</p>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<h2 id="account">Account Issues</h2>
+<p>Q. I cannot log into Splunk.</p>
+<p style="padding-left: 40px;">A. Please ensure you have an account in Splunk and that you are using the correct credentials.&nbsp; If the problem persists, please submit an ASKIT request.&nbsp;</p>
+<p>Q.&nbsp; How do I gain access to Splunk?</p>
+<p style="padding-left: 40px;">A.&nbsp; Submit a security request saying you need access to the Splunk platform</p>
+<p>Q. What level of access do I need?</p>
+<p style="padding-left: 40px;">A. Access will depend on your role and your need.&nbsp; The roles are broken out as follows:</p>
+<ul style="list-style-position: inside;">
+<li><strong><u>MGIC users</u></strong>
+<ul style="list-style-position: inside;">
+<li>app-splunk-admin - Splunk admins who will be responsible for maintaining the Splunk tool</li>
+<li>app-splunk-dev - Consists of developers with access to all indexes not deemed IRM only data</li>
+<li>app-splunk-infra - Consists of infrastructure engineers with access to all indexes not deemed IRM only data</li>
+<li>app-splunk-support - Consists of lower tier support members with limited access to some indexes</li>
+<li>app-splunk-security - Group for IRM with access to all indexes</li>
+</ul>
+</li>
+<li><strong><u>Tavant users</u></strong>
+<ul style="list-style-position: inside;">
+<li>app-splunk-tavant-dev - Tavant developer access group into Splunk</li>
+<li>app-splunk-tavant-devops - Tavant devops access group into Splunk</li>
+<li>app-splunk-tavant-prod-support - Tavant prod support access group into Splunk</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<h2 id="general">General Issues</h2>
+<p>Q. Where is Splunk data saved?</p>
+<p style="padding-left: 40px;">A. <strong>Amazon Web Services (AWS) Data Centers</strong>: US (Virginia, Oregon, GovCloud)</p>
+<p>Q. Can I get reports from Splunk?</p>
+<p style="padding-left: 40px;">A. Yes you can.&nbsp; If you need assistance creating a report please submit an ASKIT request.</p>
+<p>Q. Can Splunk generate alerts?</p>
+<p style="padding-left: 40px;">A. Yes it can. If you need an alert created please submit an ASKIT request.</p>
+<p>Q. Can I create dashboards?</p>
+<p style="padding-left: 40px;">A. Yes you can, however depending on your permissions you may not be able to share them with team mates.&nbsp; If you need a dashboard created for your team or require assistance please submit and ASKIT request.</p>
+<p>Q. Which browsers are supported?</p>
+<p style="padding-left: 40px;">A. Chrome (latest), Firefox (latest), Internet Explorer 11 (Splunk Cloud does not support this browser in Compatibility Mode), and Safari (latest)</p>
+<p>Q. Where can I find the Splunk Run Book created by Ahead?</p>
+<p style="padding-left: 40px;">A. <span style="color: #ff00ff;"><a style="color: #ff00ff;" title="MGIC_Splunk_Runbook" href="sys_attachment.do?sys_id=11656db6db0da4d0a5e4b9f2e2961988" target="_blank" rel="noopener noreferrer nofollow">MGIC_Splunk_Runbook</a></span></p>
+<p>Q. Where can I find the support Wiki for Splunk?</p>
+<p style="padding-left: 40px;">A. <span style="color: #ff00ff;"><a style="color: #ff00ff;" title="https://tools.mgic.net/xwiki/bin/view/Tools/Splunk/" href="https://tools.mgic.net/xwiki/bin/view/Tools/Splunk/" rel="nofollow">https://tools.mgic.net/xwiki/bin/view/Tools/Splunk/</a></span></p>
+<p><span style="color: #000000;">Q. Where can I find an introduction to Splunk</span></p>
+<p style="padding-left: 40px;"><span style="color: #000000;">A. <a href="https://thinkahead.sharefile.com/share/view/s91f1d9a3c4fe4b9b8ea9f8b6cf7ae5f7" rel="nofollow">https://thinkahead.sharefile.com/share/view/s91f1d9a3c4fe4b9b8ea9f8b6cf7ae5f7</a></span></p>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<h2 id="search">Search Issues</h2>
+<p>Q. Where can I find a quick reference for searches?</p>
+<p style="padding-left: 40px;">A. <span style="color: #ff00ff;"><a style="color: #ff00ff;" href="https://www.splunk.com/pdfs/solution-guides/splunk-quick-reference-guide.pdf" rel="nofollow">https://www.splunk.com/pdfs/solution-guides/splunk-quick-reference-guide.pdf</a></span></p>
+<p>Q. Why can't I do real-time searches?</p>
+<p style="padding-left: 40px;">A. Real-time searches create a generally poor experience for all other users while a real-time search is active.&nbsp; As such they are generally limited to admins and should only be used while needed.</p>
+<p>Q. Why does my search take so long?</p>
+<p style="padding-left: 40px;">A. You likely have a large window setup in your timeframe for the search or you have created a search that is pulling back too many results.</p>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<h2 id="display">Display Issues</h2>
+<p>Q. Why do my colors look off on the dashboard?</p>
+<p style="padding-left: 40px;">A.&nbsp; Make sure that you are using a supported browser and if the dashboard was made with dark-mode off that your dark-mode is also disabled.</p>
+<p>Q. Why can't I see a specific dashboard?</p>
+<p style="padding-left: 40px;">A. That dashboard may not have been shared to you and/or your role may not permit access to that index.</p>
+<p>Q. Why does my display of Splunk look different than everyone else?</p>
+<p style="padding-left: 40px;">A. You may be using an incompatible browser.&nbsp; Splunk supports: Chrome (latest), Firefox (latest), Internet Explorer 11 (Splunk Cloud does not support this browser in Compatibility Mode), and Safari (latest)</p>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<h2 id="log">Log Issues</h2>
+<p>Q. Why can't I find my logs?</p>
+<p style="padding-left: 40px;">A. You may be searching in the wrong index or those logs may not have been setup for ingestion yet.&nbsp; Try your search again without the index declared.&nbsp; If that still doesn't work, please submit and ASKIT request.</p>
+<p>&nbsp;</p>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<h2 id="add_resources">Additional Resources</h2>
+<ul style="list-style-position: inside;" type="disc">
+<li><a title="Splunk .conf Online [conf.splunk.com]" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__conf.splunk.com_watch_conf-2Donline.html&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=KALicui_-t4vHwWFLBANN_NsoC1hJ4zAW1CmVK3nu4I&amp;m=8Jz9SY5DaMFdnZ-2uhwww8AXsVOX3SYTr41gy9ZovEs&amp;s=M9jLbhriksY-CUycYohGJDJdi_ggXsRwvAuLOriAJjM&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Splunk .conf Online [conf.splunk.com]</a>&nbsp;- Incredible resource for training, education, exploration of data sources.&nbsp; Come see what others are doing, and how they do it, with Splunk!&nbsp;</li>
+<li><a title="https://www.splunk.com/en_us/training/free-courses/splunk-fundamentals-1.html" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.splunk.com_en-5Fus_training_free-2Dcourses_splunk-2Dfundamentals-2D1.html&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=KALicui_-t4vHwWFLBANN_NsoC1hJ4zAW1CmVK3nu4I&amp;m=8Jz9SY5DaMFdnZ-2uhwww8AXsVOX3SYTr41gy9ZovEs&amp;s=EYpnrc7aFwd1RLHL03_yP-DxMQ2mnNWkh6l0T14q0_8&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Free Splunk Fundamentals 1 online course!&nbsp;[splunk.com]</a> &ndash; A free online course that teaches you how to search and navigate in Splunk, use fields, get statistics from your data, and create reports, dashboards, lookups and alerts</li>
+<li><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__drive.google.com_drive_u_0_folders_1TJB8Dq-5FxOXCChKgVWh0wCaeffBR9Xkbr&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=Kv9SFF54lFFJ87bXfc4wxwiXMHli-bFYiJxvMXia4dY&amp;m=cmQjjOBHaN2R_hVsuLNwEh9dPowEvZa-_2Sc6Ga_JoY&amp;s=6UN2T6tzrH4YgZ1xqafSxz5c9lAqcgOEJcM5Kg9C1V0&amp;e=" rel="nofollow">The&nbsp;Workshop Materials [drive.google.com]</a> - Google Drive folder with all the materials from the workshop.</li>
+<li><a title="bit.ly/S4R-Virtual-Attendee" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__drive.google.com_file_d_1deHU2DxKDl-5FcjObNtq3PbuMqfmhLmIgi_view-3Fusp-3Dsharing&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=Kv9SFF54lFFJ87bXfc4wxwiXMHli-bFYiJxvMXia4dY&amp;m=cmQjjOBHaN2R_hVsuLNwEh9dPowEvZa-_2Sc6Ga_JoY&amp;s=ZtoV4EzcV1yLdKUA8U8CuoXdTpGbetRCOf2rBAmtKNM&amp;e=" target="_blank" rel="noopener noreferrer nofollow">The Splunk 4 Rookies slide deck&nbsp; [drive.google.com]</a>&ndash; a copy of the slides used during your Splunk 4 Rookies workshop</li>
+<li><a title="bit.ly/S4R-QuickRef" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__drive.google.com_file_d_1ZAj-5FQDpXrjyRNyDgIJfsegGAQgJwR9zx_view-3Fusp-3Dsharing&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=Kv9SFF54lFFJ87bXfc4wxwiXMHli-bFYiJxvMXia4dY&amp;m=cmQjjOBHaN2R_hVsuLNwEh9dPowEvZa-_2Sc6Ga_JoY&amp;s=nf6mTQKtkl5lPeh4BkMEr1oxIuvfGCmqHySIG_imGwc&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Splunk Quick Reference Guide&nbsp; [drive.google.com]</a>&nbsp;&ndash; a six-page reference card that provides fundamental Splunk search concepts, commands, functions, and examples</li>
+<li><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__docs.splunk.com_&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=KALicui_-t4vHwWFLBANN_NsoC1hJ4zAW1CmVK3nu4I&amp;m=8Jz9SY5DaMFdnZ-2uhwww8AXsVOX3SYTr41gy9ZovEs&amp;s=gDbKM5i1dg5Seus_n2-Y8fdgM3hIuShNHOQPtfe5_ls&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Splunk Docs&nbsp;[docs.splunk.com]</a>&nbsp;&ndash; our online documentation repository</li>
+<li><a href="https://urldefense.proofpoint.com/v2/url?u=http-3A__answers.splunk.com_&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=KALicui_-t4vHwWFLBANN_NsoC1hJ4zAW1CmVK3nu4I&amp;m=8Jz9SY5DaMFdnZ-2uhwww8AXsVOX3SYTr41gy9ZovEs&amp;s=ELIRmBqfY05SbUC_lvTiW2v3wvTFDvLxSnRZc2qoXm8&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Splunk Answers&nbsp;[answers.splunk.com]</a>&nbsp;- engage with the&nbsp;Splunk&nbsp;community and learn how to get the most out of your Splunk deployment by searching the forum for answers, or asking questions of your own!</li>
+<li><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.splunk.com_en-5Fus_about-2Dus_events.html-23filter_defilter1_EMEA_defilter2_list-2Ditem-2Dblock_defilter3_list-2Ditem-2Dblock&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=KALicui_-t4vHwWFLBANN_NsoC1hJ4zAW1CmVK3nu4I&amp;m=8Jz9SY5DaMFdnZ-2uhwww8AXsVOX3SYTr41gy9ZovEs&amp;s=uP9CvmXdStudFp7SapAo3PFbYIIAg1lTqjQjodS1g3Y&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Splunk Events&nbsp;[splunk.com]</a>&nbsp;&ndash; find Splunk events near you!</li>
+<li><a title="https://usergroups.splunk.com/" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__usergroups.splunk.com_&amp;d=DwMFaQ&amp;c=fVNAIk8yGfVsup5XvIA0nw&amp;r=KALicui_-t4vHwWFLBANN_NsoC1hJ4zAW1CmVK3nu4I&amp;m=8Jz9SY5DaMFdnZ-2uhwww8AXsVOX3SYTr41gy9ZovEs&amp;s=i7Xj1BW2RTBUMtcNOn9A4oxEVWXy1dkrRlfW3xL9omY&amp;e=" target="_blank" rel="noopener noreferrer nofollow">Splunk User Groups&nbsp;[usergroups.splunk.com]</a>&nbsp;&ndash; find a Splunk User Group near you and connect with like-minded people who are passionate about Splunk technology</li>
+</ul>
+<p><a href="#top" rel="nofollow">To the Top</a></p>
+<hr />
+<p>&nbsp;</p>
